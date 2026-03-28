@@ -23,9 +23,15 @@ namespace InfinityAmmo
 
         private void OnReloadingWeapon(PlayerReloadingWeaponEventArgs ev)
         {
-            int ammo = ev.FirearmItem.MaxAmmo - ev.FirearmItem.StoredAmmo;
+            if (ev.FirearmItem.IsReloadingOrUnloading)
+                return;
             
-            ev.Player.SetAmmo(ev.FirearmItem.AmmoType, (ushort)ammo);
+            if (ev.FirearmItem.StoredAmmo != ev.FirearmItem.MaxAmmo)
+            {
+                int ammo = ev.FirearmItem.MaxAmmo - ev.FirearmItem.StoredAmmo;
+                ev.Player.SetAmmo(ev.FirearmItem.AmmoType, (ushort)ammo);
+                ev.FirearmItem.Reload();
+            }
         }
 
         private void OnDroppingAmmo(PlayerDroppingAmmoEventArgs ev)
