@@ -15,7 +15,7 @@
       <img src="https://img.shields.io/github/downloads/ArgentumTeam-SCP-SL/InfinityAmmo/total" alt="Total Downloads">
     </a>
     <a href='https://discord.gg/8YZkMzDQwz'>
-      <img src='https://img.shields.io/discord/1170301876990914631?color=7289da&logo=discord&logoColor=white' alt="Discord Server" height="30">
+      <img src='https://img.shields.io/discord/1487540764392034477?style=flat&logo=discord&logoColor=white&color=7289da' alt="Discord Server" height="30">
     </a>
 </p>
 </div>
