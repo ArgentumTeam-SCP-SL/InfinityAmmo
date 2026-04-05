@@ -19,3 +19,8 @@
     </a>
 </p>
 </div>
+
+
+# Installation
+
+``InfinityAmmo.dll`` move to ``~\LabAPI\plugins\global``
