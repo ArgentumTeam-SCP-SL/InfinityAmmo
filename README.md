@@ -20,6 +20,9 @@
 </p>
 </div>
 
+# Information
+- The player receives the required number of ammo for reloading.
+- The plugin prevents the player from discarding ammo.
 
 # Installation
 
